@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <!-- Tailwind CSS -->
+    <script src="./js/tailwindcss.js"></script>
+
+    <!-- CSS Source -->
+    <link rel="stylesheet" href="./css/styles.css"/>
+</head>
+<body class="h-dvh bg-slate-200 flex justify-center items-center">
+    
+    <div class="bmi w-96 h-64 rounded-lg bg-white shadow-lg p-5 flex flex-col gap-4 justify-center">
+        <h1 class="text-2xl text-center">BMI Calculator</h1>
+
+        <input type="text" class="height w-full py-1 px-5 border outline-none" placeholder="Enter your height (cm)"/>
+        <input type="text" class="weight w-full py-1 px-5 border outline-none" placeholder="Enter your weight (kg)"/>
+
+        <button onclick="submitBtnFunc()" class="py-2 bg-blue-500 rounded-md shadow-sm text-white">Submit</button>
+
+        <p class="output-display" style="text-align: center;"></p>
+    </div>
+
+
+    <!-- JS Source -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
