@@ -10,6 +10,8 @@ function submitBtnFunc() {
         alert("Enter your height")
     } else if(weight.value == "") {
         alert("Enter your weight")
+    } else if(isNaN(height.value) || isNaN(weight.value)) {
+        alert("Enter valid height & weight")
     } else {
         let bmiCalc = weight.value / (height.value * height.value) * 10000
 
