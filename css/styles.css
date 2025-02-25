@@ -43,7 +43,7 @@ input.ph-text::placeholder {
     background-clip: text;
 }
 
-/* .bmi.error{
+.bmi.error{
     animation: errorEffect 0.3s linear 1;
 }
 
@@ -63,4 +63,4 @@ input.ph-text::placeholder {
     100%{
         transform: translate(0, 0); 
     }
-} */
+}
