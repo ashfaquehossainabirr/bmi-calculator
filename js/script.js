@@ -1,3 +1,4 @@
+const bmiBox = document.querySelector(".bmi")
 const weight = document.querySelector(".weight")
 const height = document.querySelector(".height")
 
@@ -18,19 +19,51 @@ function submitBtnFunc() {
         if(bmiCalc >= 0 && bmiCalc <= 18.4) {
             display.style.background = "hsl(33, 100%, 80%)"
             display.style.color = "#000"
-            display.innerHTML = bmiCalc.toFixed(2) + " (Underweight)"
+            display.innerHTML = "BMI: " + bmiCalc.toFixed(2) + " (Underweight)"
+            height.value = ""
+            weight.value = ""
+            
+            setTimeout(() => {
+                display.style.background = "none"
+                display.style.color = "none"
+                display.innerHTML = ""
+            }, 6000)
         } else if (bmiCalc >= 18.5 && bmiCalc <= 24.9) {
             display.style.background = "green"
             display.style.color = "#fff"
-            display.innerHTML = bmiCalc.toFixed(2) + " (Normal)"
+            display.innerHTML = "BMI: " + bmiCalc.toFixed(2) + " (Normal)"
+            height.value = ""
+            weight.value = ""
+            
+            setTimeout(() => {
+                display.style.background = "none"
+                display.style.color = "none"
+                display.innerHTML = ""
+            }, 6000)
         } else if (bmiCalc >= 25.0 && bmiCalc <= 39.9) {
             display.style.background = "goldenrod"
             display.style.color = "#000"
-            display.innerHTML = bmiCalc.toFixed(2) + " (Overweight)"
+            display.innerHTML = "BMI: " + bmiCalc.toFixed(2) + " (Overweight)"
+            height.value = ""
+            weight.value = ""
+            
+            setTimeout(() => {
+                display.style.background = "none"
+                display.style.color = "none"
+                display.innerHTML = ""
+            }, 6000)
         } else if (bmiCalc >= 40.0) {
             display.style.background = "red"
             display.style.color = "#fff"
-            display.innerHTML = bmiCalc.toFixed(2) + " (Obese)"
+            display.innerHTML = "BMI: " + bmiCalc.toFixed(2) + " (Obese)"
+            height.value = ""
+            weight.value = ""
+            
+            setTimeout(() => {
+                display.style.background = "none"
+                display.style.color = "none"
+                display.innerHTML = ""
+            }, 6000)
         }
     }
 }

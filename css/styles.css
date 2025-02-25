@@ -14,9 +14,16 @@ ul, ol {
 }
 
 p.output-display {
-    padding: 2px 0;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    margin-top: 20px;
+    padding: 8px 16px;
     text-align: center;
     border-radius: 5px;
+    transform: translateX(-50%);
+    /* color: #000;
+    background: #fff; */
 }
 
 .grad-bg-GreenBlue {
@@ -34,3 +41,25 @@ input.ph-text::placeholder {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
+/* .bmi.error{
+    animation: errorEffect 0.3s linear 1;
+}
+
+@keyframes errorEffect{
+    0%{
+        transform: translate(10px, 5px)
+    }
+    25%{
+        transform: translate(-5px, 0)
+    }
+    50%{
+        transform: translate(8px, 2px)
+    }
+    75%{
+        transform: translate(-2px, 5px)
+    }
+    100%{
+        transform: translate(0, 0); 
+    }
+} */
