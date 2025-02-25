@@ -6,13 +6,49 @@ const display = document.querySelector(".output-display")
 
 function submitBtnFunc() {
     if(height.value == "" && weight.value == "") {
-        alert("Enter your height & weight")
+        display.style.background = "red"
+        display.style.color = "#fff"
+        display.innerHTML = "Enter your height & weight"
+
+        setTimeout(() => {
+            display.style.background = "none"
+            display.style.color = "none"
+            display.innerHTML = ""
+        }, 6000)
     } else if(height.value == "") {
-        alert("Enter your height")
+        display.style.background = "red"
+        display.style.color = "#fff"
+        display.innerHTML = "Enter your height"
+        weight.value = ""
+
+        setTimeout(() => {
+            display.style.background = "none"
+            display.style.color = "none"
+            display.innerHTML = ""
+        }, 6000)
     } else if(weight.value == "") {
-        alert("Enter your weight")
+        display.style.background = "red"
+        display.style.color = "#fff"
+        display.innerHTML = "Enter your weight"
+        height.value = ""
+
+        setTimeout(() => {
+            display.style.background = "none"
+            display.style.color = "none"
+            display.innerHTML = ""
+        }, 6000)
     } else if(isNaN(height.value) || isNaN(weight.value)) {
-        alert("Enter valid height & weight")
+        display.style.background = "red"
+        display.style.color = "#fff"
+        display.innerHTML = "Enter valid height & weight"
+        weight.value = ""
+        height.value = ""
+
+        setTimeout(() => {
+            display.style.background = "none"
+            display.style.color = "none"
+            display.innerHTML = ""
+        }, 6000)
     } else {
         let bmiCalc = weight.value / (height.value * height.value) * 10000
 
