@@ -64,3 +64,13 @@ input.ph-text::placeholder {
         transform: translate(0, 0); 
     }
 }
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 639px) {
+    p.output-display {
+        top: 75%;
+    }
+}
