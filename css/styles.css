@@ -12,3 +12,25 @@ a {
 ul, ol {
     list-style: none;
 }
+
+p.output-display {
+    padding: 2px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.grad-bg-GreenBlue {
+    background: rgb(206,238,174);
+    background: radial-gradient(circle, rgba(206,238,174,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+input.ph-text::placeholder {
+    color: #333;
+}
+
+.grad-text{
+    background: radial-gradient(circle, rgba(206,238,174,1) 0%, rgba(148,187,233,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
